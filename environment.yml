@@ -1,0 +1,28 @@
+name: cti
+channels:
+  - pytorch
+  - nvidia
+  - huggingface
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - pytorch=2.0
+  - pytorch-cuda=11.7
+  - pandas
+  - numpy
+  - scikit-learn
+  - transformers
+  - sentence-transformers
+  - jupyterlab
+  - pip
+  - pip:
+    - matplotlib
+    - seaborn
+    - evaluate
+    - ipykernel
+    - ipywidgets
+    - newspaper3k
+    - ioc-fanger
+    - ioc-finder
+    - rank_bm25
