@@ -1,4 +1,4 @@
-# CTI2AttackMetrix
+# Text2TTP
 
 Cyber Threat Intelligence Report to MITRE ATT&CK Metrix
 
