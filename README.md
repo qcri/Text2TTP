@@ -2,6 +2,8 @@
 
 Cyber Threat Intelligence Report to MITRE ATT&CK Metrix
 
+#### Core Maintainer and Developer: Udesh Kumarasinghe (mail @ udesh . xyz) 
+
 ## Directory Overview
 
 - `data` contains the datasets created in this work.
@@ -10,6 +12,7 @@ Cyber Threat Intelligence Report to MITRE ATT&CK Metrix
   - `sentences_santitized.csv` - Sentence dataset with IOCs sanitized.
 - `libs` - Python packages to load, preprocess, run the pipeline, and evaluate.
 - `preprocessing` - Notebooks demonstrating the preprocessing steps.
+- `models` - Our Pre-trained models used in our experiments. They are available on HuggingFace: [Models](https://huggingface.co/collections/qcri-cs/text2ttp-6648e136db255eefa7456d96)
 - `Pipeline.ipynb` - Usage of proposed threat detection pipeline.
 
 ## How to Use
@@ -55,6 +58,16 @@ stage3_reranker = rank.construct_monot5()
 
 Refer to the `Pipeline.ipynb` for detailed example of the pipeline. Additional,
 resources on how to run can be found at [here](https://github.com/castorini/pygaggle?tab=readme-ov-file#a-simple-reranking-example).
+
+## Citation
+```
+@article{kumarasinghe2024semantic,
+  title={Semantic Ranking for Automated Adversarial Technique Annotation in Security Text},
+  author={Kumarasinghe, Udesh and Lekssays, Ahmed and Sencar, Husrev Taha and Boughorbel, Sabri and Elvitigala, Charitha and Nakov, Preslav},
+  journal={arXiv preprint arXiv:2403.17068},
+  year={2024}
+}
+```
 
 ## Third Party Frameworks
 
