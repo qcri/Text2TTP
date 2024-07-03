@@ -2,6 +2,30 @@
 
 Cyber Threat Intelligence Report to MITRE ATT&CK Metrix
 
+This is the reproduction material for our work: "Semantic Ranking for Automated Adversarial Technique Annotation in Security Text" published in AsiaCCS'24.
+
+If you use our tool, models, or dataset, please cite our work:
+
+```
+@inproceedings{10.1145/3634737.3645000,
+    author = {Kumarasinghe, Udesh and Lekssays, Ahmed and Sencar, Husrev Taha and Boughorbel, Sabri and Elvitigala, Charitha and Nakov, Preslav},
+    title = {Semantic Ranking for Automated Adversarial Technique Annotation in Security Text},
+    year = {2024},
+    isbn = {9798400704826},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3634737.3645000},
+    doi = {10.1145/3634737.3645000},
+    abstract = {We introduce a novel approach for mapping attack behaviors described in threat analysis reports to entries in an adversarial techniques knowledge base. Our method leverages a multi-stage ranking architecture to efficiently rank the most related techniques based on their semantic relevance to the input text. Each ranker in our pipeline uses a distinct design for text representation. To enhance relevance modeling, we leverage pretrained language models, which we fine-tune for the technique annotation task. While generic large language models are not yet capable of fully addressing this challenge, we obtain very promising results. We achieve a recall rate improvement of +35\% compared to the previous state-of-the-art results. We further create new public benchmark datasets for training and validating methods in this domain, which we release to the research community aiming to promote future research in this important direction.},
+    booktitle = {Proceedings of the 19th ACM Asia Conference on Computer and Communications Security},
+    pages = {49–62},
+    numpages = {14},
+    keywords = {threat intelligence, TTP annotation, text ranking, text attribution},
+    location = {Singapore, Singapore},
+    series = {ASIA CCS '24}
+}
+```
+
 #### Core Maintainer and Developer: Udesh Kumarasinghe (mail @ udesh . xyz) 
 
 ## Directory Overview
@@ -58,16 +82,6 @@ stage3_reranker = rank.construct_monot5()
 
 Refer to the `Pipeline.ipynb` for detailed example of the pipeline. Additional,
 resources on how to run can be found at [here](https://github.com/castorini/pygaggle?tab=readme-ov-file#a-simple-reranking-example).
-
-## Citation
-```
-@article{kumarasinghe2024semantic,
-  title={Semantic Ranking for Automated Adversarial Technique Annotation in Security Text},
-  author={Kumarasinghe, Udesh and Lekssays, Ahmed and Sencar, Husrev Taha and Boughorbel, Sabri and Elvitigala, Charitha and Nakov, Preslav},
-  journal={arXiv preprint arXiv:2403.17068},
-  year={2024}
-}
-```
 
 ## Third Party Frameworks
 
